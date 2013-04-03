@@ -1,8 +1,7 @@
-<div class="container">
-  <a href='/categories/<%=@category.id%>/posts/new'> New Post </a>
-  <ul>
-    <%@posts.each do |post|%>
-     <li><a href="<%=url("/posts/#{post.id}")%>"> <%=post.name%> </a></li>
-    <%end%> 
-  </ul>
-</div>
+<h1><%=@category.name%></h1>
+<a href='/categories/<%=@category.id%>/posts/new'> New Post </a>
+<ul>
+  <%@posts.each do |post|%>
+   <li><a href="<%=url("/posts/#{post.id}")%>"> <%=post.name%> </a></li>
+  <%end%> 
+</ul>

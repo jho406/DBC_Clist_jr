@@ -1,6 +1,7 @@
-<div class="container">
+<h1>Welcome to Craigslist, Jr.</h1>
+<h2>Categories:</h2>
+<ul>
   <%@categories.each do |category|%>
-    <a href="<%=url("/categories/#{category.id}")%>"> <%=category.name%> </a>
+    <li><a href="<%=url("/categories/#{category.id}")%>"> <%=category.name%> </a></li>
   <%end%> 
-
-</div>
+</ul>

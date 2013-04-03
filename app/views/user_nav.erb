@@ -1,8 +1,9 @@
-<!-- <a href=""> View Post </a> -->
-<a href="<%=url("/categories/#{category.id}"> Edit/Delete your Post </a>
-<a href="/categories"> Home </a>
-
-
-
-#  redirect to("/posts/#{post.id}/edit?access_key=#{post.access_key}")
-# <a href="<%=url("/categories/#{category.id}")%>"> <%=category.name%> </a>
+<h1>Post complete!</h1>
+<h2>Where to now?</h2>
+<ul> 
+  <li><a href="/posts/<%=@post.id%>"> View Post </a></li>
+  <li><a href="/posts/<%=@post.id%>/edit?access_key=<%=@post.access_key%>"> Edit/Delete Post </a></li>
+  <li><a href="/categories"> Home </a></li>
+</ul>
+<p>Save this link to edit or delete your post in the future:<br>
+  /posts/<%=@post.id%>/edit?access_key=<%=@post.access_key%></p>

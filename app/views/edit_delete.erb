@@ -1,7 +1,9 @@
-<div class='container'>
-  <form action= "" method="post">
-    Post name: <br><input type="text" name="name" value="<%=@post.name%>"><br>
-    Post body: <br><textarea name="body" rows="8" cols="50"><%=@post.body%></textarea>
-    <br><input type="submit" value="Submit Changes">
-  </form>  
-</div>
+<h1>Edit or Delete your post</h1>
+<form action= "" method="post">
+  <ul>
+    <li>Post name: <br><input type="text" name="name" value="<%=@post.name%>"></li>
+    <li>Post body: <br><textarea name="body" rows="8" cols="50"><%=@post.body%></textarea></li>
+    <li><input type="submit" value="Submit Changes" name="submit"></li>
+    <li><input type="submit" value="Delete Post" name="submit"></li>
+  </ul>
+</form>  
